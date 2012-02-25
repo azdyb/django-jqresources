@@ -6,9 +6,7 @@ JqResources is an Django application, which helps managing JavaScript and CSS re
 
 JqResources is meant to provide reusable static resources for applications within whole site.
 
-It has an `admin interface`_ allowing to add resources, which can then be used by other applications. 
-
-.. _admin interface: "What it looks like?"
+It has an `admin interface`_ allowing to add resources, which can then be used by other applications.
 
 
 Genesis and ideas
@@ -61,8 +59,7 @@ Translating JqResources
 
 Here is how JqResource knows the paths of the resources. The user needs to provide all the resources, name them and indicate their versions. It is done with an convenient `admin interface`_. Unlimited number of resources may be added and each of them may have unlimited number of versions. Each resource may have a default version, which will be used if none is explicitly desired.
 
-.. _admin interface: "What it looks like?"
-
+.. _admin interface:
 
 What it looks like?
 ===================
