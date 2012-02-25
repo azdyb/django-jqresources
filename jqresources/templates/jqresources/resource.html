@@ -1,0 +1,6 @@
+{% if resource_version.resource.type == "js" %}
+{% include "jqresources/script.html" %}
+{% endif %}
+{% if resource_version.resource.type == "css" %}
+{% include "jqresources/style.html" %}
+{% endif %}

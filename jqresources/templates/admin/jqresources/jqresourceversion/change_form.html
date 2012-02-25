@@ -1,0 +1,13 @@
+{% extends "admin/change_form.html" %}
+
+{% load i18n %}
+{% load resources %}
+
+{% block content_title %}
+{% get_resource request.GET.resource as resource %}
+{% if resource %}
+{% if title %}<h1>{{ title }} {% trans "for" %} {{ resource }}</h1>{% endif %}
+{% else %}
+{{ block.super }}
+{% endif %}
+{% endblock %}

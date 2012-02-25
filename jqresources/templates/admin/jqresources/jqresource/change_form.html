@@ -1,0 +1,17 @@
+{% extends "admin/change_form.html" %}
+
+{% load i18n %}
+
+{% block field_sets %}
+{% for fieldset in adminform %}
+  {% if fieldset.name != "Hidden" %}
+  {% include "admin/includes/fieldset.html" %}
+  {% endif %}
+{% endfor %}
+{% endblock %}
+
+{% block after_related_objects %}
+{% if original %}
+<a class="add-version" href="../../jqresourceversion/add/?resource={{ original.pk }}" >{% trans "Add version" %}</a>
+{% endif %}
+{% endblock %}

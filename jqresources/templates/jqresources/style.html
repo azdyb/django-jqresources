@@ -1,0 +1,4 @@
+{% load static %}
+{% if resource_version %}{% spaceless %}
+<link rel="stylesheet" type="text/css" href="{% static resource_version.path %}" />
+{% endspaceless %}{% endif %}

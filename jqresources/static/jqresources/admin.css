@@ -1,0 +1,37 @@
+fieldset.hidden-fields {
+    display: none;
+}
+
+a.add-version {
+    background-image: url(icon_addlink.gif);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 16px;
+    margin-left: 4px;
+}
+
+span.edit-versions {
+    float: right;
+}
+
+span.edit-versions a {
+    background-image: url(icon_changelink.gif);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 16px;
+    margin-left: 4px;
+}
+
+span.edit-versions a {
+    cursor: pointer;
+}
+
+span.edit-versions a:hover {
+    color: white;
+}
+
+tr.dynamic-versions input[type=text]:disabled, tr.dynamic-versions input.disabled[type=text] {
+    color: initial;
+    background: none;
+    border-color: transparent;
+}

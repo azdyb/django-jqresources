@@ -1,0 +1,4 @@
+{% load static %}
+{% if resource_version %}{% spaceless %}
+<script src="{% static resource_version.path %}"></script>
+{% endspaceless %}{% endif %}
