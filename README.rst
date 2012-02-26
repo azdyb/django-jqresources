@@ -89,9 +89,10 @@ Installation
 JqResources is installed just like any other Django application:
 
 1. Put JqResources in any path, where python can find it
-2. Run ```manage.py syncdb``` to create database tables for JqResources
-3. Run ```manager.py collectstatic``` to copy (or link) static files used by JqResources itself
-4. Register ModelAdmin classes found in ``jqresources/admin.py`` file in you admin site
+2. Add *jqresources* to ``INSTALLED_APPS`` in settings.py
+3. Run ```manage.py syncdb``` to create database tables for JqResources
+4. Run ```manager.py collectstatic``` to copy (or link) static files used by JqResources itself
+5. Register ModelAdmin classes found in ``jqresources/admin.py`` file in you admin site
 
 
 Performance and security concerns
